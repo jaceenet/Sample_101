@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EmberJS</id>
+    <version>1.0.8</version>
+    <title>EmberJS 1.0.0-rc.5 and Handlebars script 1.0.0 package</title>
+    <authors>Yehuda Katz, Tom Dale, Charles Jolley and Ember.js contributors</authors>
+    <owners>Yehuda Katz, Tom Dale, Charles Jolley and Ember.js contributors</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://emberjs.com/ http://handlebarsjs.com/</projectUrl>
+    <iconUrl>http://www.adatapost.com/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package include Ember and Handlebars script files.</description>
+    <summary>License:   Licensed under MIT license
+https://raw.github.com/emberjs/ember.js/master/LICENSE
+https://github.com/wycats/handlebars.js/blob/master/LICENSE</summary>
+    <releaseNotes>EmberJS version 1.0.0-RC.5 (http://emberjs.com/) and Handlebars version 1.0.0 (http://handlebarsjs.com/) script files.</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>EmberJS, Handlebars, MVC, JavaScript</tags>
+    <dependencies>
+      <dependency id="jQuery" version="1.9.1" />
+    </dependencies>
+  </metadata>
+</package>

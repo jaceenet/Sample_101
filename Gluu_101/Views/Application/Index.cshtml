@@ -1,0 +1,32 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Gluu sandbox";
+    Layout = null;
+}
+
+<html>
+    <head>
+        <script type="text/javascript" src="~/Scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="~/Scripts/handlebars-1.0.0.js"></script>
+    </head>
+<body>
+    <h2>Hello</h2>
+    <div id="profile"></div>    
+    
+    <script type="text/javascript">
+
+        var templatefile = '@Url.Content("~/handlebars-tmpl/profile.html")';
+
+        $.get(templatefile, function(tmpl) {
+            template = Handlebars.compile(tmpl);
+
+            $.get('@Url.Action("Get", "user", new { id = 1 })', function(data) {
+                $('#profile').html(template(data));
+            });
+        });               
+    </script>
+
+
+</body>
+</html>
